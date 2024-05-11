@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const Global = () => {
   const { t } = useTranslation();
   return (
-    <div className=" my-10 py-20">
+    <div className="bg-[#111219] py-20">
       <div className="container mx-auto px-4 lg:px-0 flex flex-col lg:flex-row justify-center items-center lg:gap-10">
         <div className="lg:w-1/2 xs:w-full">
           <iframe

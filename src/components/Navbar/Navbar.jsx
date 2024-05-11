@@ -42,7 +42,7 @@ const Navbar = ({ changeLang }) => {
   };
 
   return (
-    <>
+    <div className="bg-[#111219]">
       <div className="container flex justify-between items-center">
         <div className="flex justify-center items-center gap-5 top-0 ">
           <span
@@ -128,7 +128,7 @@ const Navbar = ({ changeLang }) => {
                           <li key={brand.id}>
                             <Link
                               className="text-[27px] md:text-[30px] text-white flex items-center gap-x-3 hover:text-blue-300"
-                              to={`/cars/${brand.id}`}
+                              to={`/cars/brand/${brand.id}`}
                             >
                               <img
                                 src={urlimg + brand.image_src}
@@ -272,7 +272,7 @@ const Navbar = ({ changeLang }) => {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

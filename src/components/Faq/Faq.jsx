@@ -34,13 +34,15 @@ const Faq = () => {
     },
   ];
   return (
-    <div className="faq container">
-      <div className="faq-box ">
-        <div className="faq-title">
-          <h3>FAQ</h3>
-        </div>
-        <div className="faq-item_box w-[100%]">
-          <Collapse accordion items={items} />
+    <div className="bg-[#1e1f27] py-10">
+      <div className="faq container">
+        <div className="faq-box ">
+          <div className="faq-title">
+            <h3>FAQ</h3>
+          </div>
+          <div className="faq-item_box w-[100%]">
+            <Collapse accordion items={items} />
+          </div>
         </div>
       </div>
     </div>

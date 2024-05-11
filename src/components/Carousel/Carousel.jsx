@@ -7,7 +7,7 @@ import "./style.css";
 
 import { Link, useNavigate } from "react-router-dom";
 
-export default function Carousel({ title }) {
+export default function Carousel() {
   const [cars, setCars] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const urlimg = "https://autoapi.dezinfeksiyatashkent.uz/api/uploads/images/";
@@ -56,13 +56,13 @@ export default function Carousel({ title }) {
     return <div>Loading...</div>; // Show loading indicator
   }
 
-  const handleToCars = (id) =>{
-    navigate(`/carsinfo/${id}`)
-    window.scrollTo(0,0)
-  }
- 
+  const handleToCars = (id) => {
+    navigate(`/carsinfo/${id}`);
+    window.scrollTo(0, 0);
+  };
+
   return (
-    <div className="Carousel">
+    <div className="Carousel bg-[#272933]">
       <div className="container">
         {Object.keys(groupedCars).map((categoryId) => (
           <div key={categoryId}>
@@ -83,7 +83,7 @@ export default function Carousel({ title }) {
               {groupedCars[categoryId]?.cars.map((car, index) => (
                 <SwiperSlide
                   className=" rounded-3xl  hover:bg-gradient-to-br from-gray-600 to-gray-900 cursor-pointer "
-                  onClick={()=>handleToCars(car?.id)}
+                  onClick={() => handleToCars(car?.id)}
                 >
                   <div>
                     <img
@@ -107,7 +107,7 @@ export default function Carousel({ title }) {
                     </h3>
                     <p className="text-white text-[15px] font-light">per day</p>
                   </div>
-                </SwiperSlide >
+                </SwiperSlide>
               ))}
             </Swiper>
           </div>

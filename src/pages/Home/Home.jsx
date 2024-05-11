@@ -14,11 +14,11 @@ const Home = () => {
       <Header />
       <Brends />
       <Carousel />
-      <Faq />
+      <Services />
+      <Luxury />
       <Global />
       <SuperCar />
-      <Luxury />
-      <Services />
+      <Faq />
       {/* <Location /> */}
     </div>
   );

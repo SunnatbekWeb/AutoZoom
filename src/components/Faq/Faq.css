@@ -1,5 +1,5 @@
-.faq {
-}
+.faq {}
+
 .faq-box {
   .faq-title {
     margin: 50px 0;
@@ -44,6 +44,7 @@
         .faq-item_box {
           max-width: 100%;
           background-color: aqua;
+
           .ant-collapse {
             .ant-collapse-item {
               .ant-collapse-header {
@@ -57,10 +58,10 @@
               }
 
               .ant-collapse-content {
-                background-color: rgb(5, 5, 32) !important;
+                background-color: #272933 !important;
 
                 .ant-collapse-content {
-                  background-color: rgb(5, 5, 32);
+                  background-color: #272933;
 
                   & p {
                     font-size: 18px;
@@ -93,11 +94,11 @@
     }
 
     .ant-collapse-content {
-      background-color: rgb(5, 5, 32);
+      background-color: #272933;
     }
 
     .ant-collapse-content {
-      background-color: rgb(5, 5, 32);
+      background-color: #272933;
     }
   }
 }

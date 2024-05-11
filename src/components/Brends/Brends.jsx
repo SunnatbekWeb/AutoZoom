@@ -23,7 +23,7 @@ const Brends = () => {
   }, []);
 
   return (
-    <div className="py-20">
+    <div className="py-20 bg-[#1e1f27]">
       <div className="container">
         <h4 className="text-[35px] text-gray-100 font-semibold">
           {t("brand")}

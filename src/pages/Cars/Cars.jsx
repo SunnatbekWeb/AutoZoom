@@ -9,7 +9,9 @@ const Cars = () => {
   const [brands, setBrands] = useState([]);
   const [cars, setCars] = useState([]);
   const [models, setModels] = useState([]);
-  const { brandId } = useParams();
+  const { brandId, categoryId } = useParams();
+
+  console.log(categoryId);
 
   const urlimg = "https://autoapi.dezinfeksiyatashkent.uz/api/uploads/images/";
 
@@ -18,7 +20,7 @@ const Cars = () => {
     GetBrands();
     GetModels();
     GetCars();
-  }, [brandId]);
+  }, [brandId, categoryId]);
 
   // Get tpye of cars
   const GetCarType = () => {
@@ -63,6 +65,12 @@ const Cars = () => {
             (car) => car.brand_id === brandId
           );
           setCars(filteredCars);
+        } else if (categoryId) {
+          const filteredCars = fetchedCars.filter(
+            (car) => car.category_id === categoryId
+          );
+          setCars(filteredCars);
+          console.log(filteredCars);
         } else {
           setCars(fetchedCars);
         }
@@ -163,7 +171,9 @@ const Cars = () => {
           </div>
 
           <div className="cars_sidebar-buttons">
-            <button>Reset</button>
+            <a href="/cars">
+              <button>Reset</button>
+            </a>
             <button>Apply filter</button>
           </div>
         </div>

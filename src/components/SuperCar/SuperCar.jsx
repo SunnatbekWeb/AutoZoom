@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const SuperCar = () => {
   const { t } = useTranslation();
   return (
-    <div className="xs:my-[50px] md:my-[100px]">
+    <div className="xs:py-[50px] py:my-[100px] bg-[#111219]">
       <div className="container  md:flex xs:flex-grow justify-center items-center gap-10">
         <div className="w-full">
           <img src={superCars} className="rounded-md" alt="" />

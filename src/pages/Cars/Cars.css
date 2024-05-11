@@ -89,11 +89,12 @@
 }
 
 .cars_main_container {
-    display: grid;
-    flex-grow: 1;
-    justify-content: center;
-    height: fit-content;
     min-width: 100%;
+    height: fit-content;
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    flex-grow: 1;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 }
 

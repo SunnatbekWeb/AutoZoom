@@ -7,12 +7,13 @@ p {
 }
 
 .aboutUs {
-  background: rgb(2, 0, 36);
+  padding-bottom: 40px;
+  background: #111219;
   background: linear-gradient(90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(2, 0, 36, 1) 49%,
-      rgba(2, 0, 36, 0.8100490196078431) 68%,
-      rgba(2, 0, 36, 1) 100%);
+      rgb(17, 18, 25) 0%,
+      rgb(17, 18, 25) 49%,
+      rgba(17, 18, 25, 0.8100490196078431) 68%,
+      rgb(17, 18, 25) 100%);
   position: relative;
 
   & img {

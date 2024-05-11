@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const Luxury = () => {
   const { t } = useTranslation();
   return (
-    <div>
+    <div className="py-[70px] bg-[#272933]">
       <div className="container">
         <div>
           <h4 className="xs:text-[35px] text-gray-100 xs:font-normal md:text-[40px] md:font-bold">

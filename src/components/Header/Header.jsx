@@ -13,7 +13,7 @@ const Header = () => {
     initTWE({ Carousel });
   }, []);
   return (
-    <div className="my-[40px]">
+    <div className="py-[40px] bg-[#111219]">
       <div className="my-[40px]">
         <h3 className="lg:text-[35px] md:text-[32px] sm:text-[30px] ss:text-[29px] xs:text-[28px] text-gray-100 md:font-semibold xs:font-bold text-center">
           {t("headerText1")}
