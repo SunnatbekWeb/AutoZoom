@@ -95,6 +95,7 @@
     justify-content: start;
     align-items: start;
     flex-grow: 1;
+    gap: 40px;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 }
 

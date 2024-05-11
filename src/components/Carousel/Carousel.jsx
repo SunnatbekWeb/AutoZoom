@@ -71,12 +71,12 @@ export default function Carousel() {
                 {groupedCars[categoryId]?.categoryName.toUpperCase()} RENTAL
                 DUBAI
               </h2>
-              <div className="flex text-white cursor-pointer">
+              <Link to={"/cars"} className="flex text-white cursor-pointer">
                 <p className="text-white text-xl font-light mr-2">SEE ALL</p>
                 <div className="text-xl">
                   <RightCircleOutlined />
                 </div>
-              </div>
+              </Link>
             </div>
 
             <Swiper slidesPerView={3} spaceBetween={30}>

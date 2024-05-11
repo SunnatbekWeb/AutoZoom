@@ -81,13 +81,13 @@ const Navbar = ({ changeLang }) => {
           </div>
         </div>
         <div className="block">
-          <a href="/">
+          <Link to="/">
             <img
               src={navLogo}
               className="lg:w-48 lg:h-48 md:w-44 md:h-44  sm:w-40 sm:h-40 ss:w-36 ss:h-36 xs:w-32 xs:h-32   object-fill  "
               alt="Autozoom"
             />
-          </a>
+          </Link>
         </div>
         <div className="flex items-center">
           {/* Burger menu */}
